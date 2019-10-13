@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    font-size: 100%;
+}
+p {
+    opacity: 0.7;
+}
+.header {
+    background: linear-gradient(rgba(2, 2, 2, 0.842), rgba(0, 0, 0, 0.801)),
+        url(https://blog.taskpigeon.co/wp-content/uploads/2018/02/From-Inexperienced-Freelancer-to-Owner-of-a-Digital-Marketing-Agency-Reward.jpeg)
+            no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    color: white;
+    position: relative;
+}
+.header .top-menu {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+.top-menu .logo {
+    opacity: 0.5;
+}
+.top-menu nav {
+    width: 40%;
+}
+.top-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.top-menu a {
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+    font-weight: 700;
+}
+.header .hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 40px;
+    position: relative;
+}
+.hero h1::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    height: 3px;
+    width: 50px;
+    background: rgb(255, 102, 0);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-one {
+    display: inline-block;
+    margin: 20px auto;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background: rgb(255, 102, 0);
+    border-radius: 100px;
+    transition: all 0.9s ease;
+}
+.btn-one:hover {
+    animation-name: moveBorder;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+}
+@keyframes moveBorder {
+    0% {
+        border-radius: 100px 100px 100px 100px;
+    }
+    25% {
+        border-radius: 100px 0px 100px 100px;
+    }
+    50% {
+        border-radius: 100px 0px 0px 100px;
+    }
+    75% {
+        border-radius: 100px 0px 0px 0px;
+    }
+    100% {
+        border-radius: 0px 0px 0px 0px;
+    }
+}
+.first {
+    background: rgb(255, 102, 0);
+    padding: 50px 0;
+}
+.first .btn-one {
+    background: white;
+    color: black;
+}
+.first article {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+.first h3,
+.second h3,
+.footer h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 40px;
+    position: relative;
+}
+.first h3::after,
+.second h3::after,
+.footer h3::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    height: 3px;
+    width: 50px;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.second {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.second h3::after,
+.footer h3::after {
+    background: rgb(255, 102, 0);
+}
+.second .inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+.second .inner h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.second svg {
+    font-size: 50px;
+    color: rgb(255, 102, 0);
+    margin: 40px auto 20px;
+}
+.third {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.third .block {
+    height: 250px;
+}
+.third .block img {
+    width: 100%;
+    height: 100%;
+}
+.third .block:nth-of-type(1) {
+    background: black;
+}
+.third .block:nth-of-type(2) {
+    background: #111;
+}
+.third .block:nth-of-type(3) {
+    background: #222;
+}
+.third .block:nth-of-type(4) {
+    background: #333;
+}
+.third .block:nth-of-type(5) {
+    background: #444;
+}
+.third .block:nth-of-type(6) {
+    background: #555;
+}
+.third-b {
+    background: #777;
+    padding: 50px 0;
+    text-align: center;
+}
+.third-b article {
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+}
+.third-b article h3 {
+    font-size: 2em;
+    font-weight: 500;
+}
+.third-b .btn-one {
+    background: white;
+    color: black;
+}
+.footer {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+.footer .contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 50px auto;
+    grid-gap: 30px;
+    justify-content: space-around;
+}
+.footer svg {
+    font-size: 50px;
+    color: #555;
+}
+.footer .contact p {
+    margin: 10px auto;
+}
+.footer .red {
+    color: rgba(224, 43, 37, 0.884);
+}
+.footer address {
+    margin-top: 50px;
+    opacity: 0.7;
+}
+.footer address span {
+    color: red;
+}
+@media screen and (max-width: 800px) {
+    .header {
+        min-height: 800px;
+    }
+    .hero h1 {
+        font-size: 2.2em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .top-menu nav {
+        display: none;
+    }
+}
